@@ -46,7 +46,7 @@ h2, h3 {
 
 h1 {
     font-size: 30px;
-    line-height: 40px;
+    line-height: 28px;
     border-bottom: 3px;
     padding-bottom: 20px;
 }
@@ -142,9 +142,9 @@ footer {
 #creds {
     display: block;
     color: #777777;
-    font-size: 20px;
+    font-size: 16px;
     text-align: left;
-    padding-left: 33px;
+    padding-left: 32px;
 }
 
 .floating-box {
@@ -178,7 +178,7 @@ footer {
     width: 150px;
     height: 150px;
 }
-#c {
+#C {
     float: left;
     width: 150px;
     height: 150px;
@@ -200,11 +200,11 @@ form {
     max-width: 680px;
     padding: 5px;
 }
-#message {
+#Message {
     width: 100%;
     max-width: 680px;
 }
-#email {
+#Email {
     width: 100%;
     max-width: 680px;
     padding: 5px;
@@ -219,7 +219,7 @@ form {
 }
 label,
 input [type="text"],
-input [type="email"],
+input [type="Email"],
 textarea {
     display: block;
     width: 100%;
@@ -257,13 +257,10 @@ h4 {
 }
 
 .buttons:hover {
-    background-color: #4aaaa5;
+    color: #4aaaa5;
 
 }
-/*container for columns
-.column {
-    float: left;
-}*/
+
 
 /* on screens 980px or less, maintain columns*/
 @media screen and (max-width: 980px) {
@@ -274,7 +271,7 @@ h4 {
 
 /* on screens 768px or less, maintain columns*/
 @media screen and (max-width: 768px) {
-    .container, .main-bio, #A, #B, #c, #D, #E {
+    .container, .main-bio, #A, #B, #C, #D, #E {
         width: 100%;
         height: 100%; 
     }
@@ -291,7 +288,7 @@ h4 {
         text-align: center;
     }
 } 
-@keyframes trial {
+@keyframes fade1 {
      from {background-color: #ffffff}
      to {background-color: #4aaaa5}
     
@@ -299,10 +296,19 @@ h4 {
 
 section {
     background-color: #ffffff;
-    animation-name: trial;
+    animation-name: fade1;
     animation-duration: 4s;
 }
 
+@keyframes fade2 {
+    from {color: #4aaaa5}
+    to { color: #777777}
+}
 
+h2 {
+    color: #4aaaa5;
+    animation-name: fade2;
+    animation-duration: 4s;
+}
 
 
